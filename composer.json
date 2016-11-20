@@ -1,0 +1,13 @@
+{
+    "name": "jad21/trinum-web",
+    "description": "",
+    "keywords": [],
+    "type": "project",
+    "license": "GPL-3.0+",
+    "authors": [
+        {
+            "name": "Jose Delgado",
+            "email": "esojangel@gmail.com"
+        }
+    ]
+}
