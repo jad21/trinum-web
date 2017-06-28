@@ -2,3 +2,6 @@ django==1.11
 requests==2.13.0
 psycopg2==2.7
 python-dateutil >= 1.5
+gunicorn
+dj-database-url
+whitenoise
