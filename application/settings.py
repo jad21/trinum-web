@@ -25,7 +25,7 @@ SECRET_KEY = 't1(mz&%)_lc7@=uz)$_%9_2od0=1*=#d*r^(8+efg5ep_ziqnw'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -85,7 +85,8 @@ DATABASES = {
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
 
-AUTH_PASSWORD_VALIDATORS = [
+AUTH_PASSWORD_VALID
+ATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
     },
@@ -125,3 +126,9 @@ STATIC_ROOT = os.path.join(BASE_DIR, "static/")
 MEDIA_URL = '/media/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'storage', 'media')
+
+
+import dj_database_url
+DATABASES['default'] = dj_database_url.config()
+
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
