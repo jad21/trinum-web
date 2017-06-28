@@ -5,6 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "b": "webpack",
+    "dist": "webpack -p",
     "w": "webpack -w ",
     "bw": "webpack -w -p",
     "s:w": "gulp sass:watch",
